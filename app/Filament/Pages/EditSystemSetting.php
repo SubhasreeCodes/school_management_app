@@ -10,6 +10,8 @@ use Filament\Forms\Concerns\InteractsWithForms;
 
 use Filament\Forms\Form;
 
+use Filament\Forms;
+
 
 use Filament\Tables;
 
@@ -17,6 +19,8 @@ use Filament\Tables\Table;
 
 
 use Filament\Support\Exceptions\Halt;
+
+use App\Models\SystemSetting;
 
 use Filament\Notifications\Notification;
 
@@ -75,7 +79,7 @@ class EditSystemSetting extends Page
     {
         return[
             Tables\Actions\Action::make('save')
-                ->label(_('filament-panels::resources/pages/edit-record.form.actions.save.label'))
+                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
                 ->submit('save'),
         ];
     }
