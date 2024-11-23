@@ -32,6 +32,8 @@ class EditSystemSetting extends Page
 
     public ?array $data = [];
 
+    public SystemSetting $systemSetting;
+
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     protected static string $view = 'filament.pages.edit-system-setting';
@@ -89,10 +91,10 @@ class EditSystemSetting extends Page
         try {
             // $data = $this->form->getState();
 
-            $this->systemSetting->fill($this->form->getState());
+            // $this->systemSetting->fill($this->form->getState());
             $this->systemSetting->save();
 
-            $this->notify('success', 'System settings saved successfully');
+            // $this->notify('success', 'System settings saved successfully');
 
         } catch (Halt $exception) {
 
