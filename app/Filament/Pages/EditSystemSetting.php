@@ -6,7 +6,7 @@ use Filament\Pages\Page;
 
 use Filament\Forms\Contracts\HasForms;
 
-use Filament\Forms\Contracts\InteractsWithForms;
+use Filament\Forms\Concerns\InteractsWithForms;
 
 use Filament\Forms\Form;
 
