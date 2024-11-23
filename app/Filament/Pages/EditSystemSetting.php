@@ -103,7 +103,7 @@ class EditSystemSetting extends Page
 
         Notification::make()
         ->success()
-        ->title(_('filament-panels::resources/pages/edit-record.notification.saved.title'))
+        ->title(__('filament-panels::resources/pages/edit-record.notifications.saved.title'))
         ->send();
     }
 }
